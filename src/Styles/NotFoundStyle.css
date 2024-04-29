@@ -1,0 +1,22 @@
+  /* NotFound */
+  .notFound .content{
+    padding: 5%;
+    text-align: center;
+  }
+
+
+@media only screen and (min-width: 1600px) {
+  .notFound{
+    max-width: 1800px;
+    margin: auto;
+    border: .5px solid rgb(236, 234, 234);
+  }
+}
+
+  /* Dark theme */
+@media (prefers-color-scheme: dark) {
+ .notFound{
+    background-color: rgb(24, 23, 23);
+    color: white;
+  }
+}

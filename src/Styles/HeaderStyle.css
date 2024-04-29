@@ -1,0 +1,163 @@
+/* Header */
+.header a.active{
+  font-weight: 900;
+}
+
+.header h1, .header h2{
+  animation-name: textDrop;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+.header button{
+  animation: none;
+}
+
+.header .box6 button{
+  animation: none;
+  background-color: black;
+  color: white;
+  padding: 3%;
+  font-weight: 600;
+}
+
+.header {
+  font-weight: 900;
+  animation: none;
+  padding: .1rem 1rem 1rem;
+}
+.header .box1 h1{
+  margin-top: 0%;
+  font-size: 45pt;
+  color: rgb(2, 2, 30);
+}
+.header .box2 .links{
+  display: none;
+}
+.header .box2.links a{
+  margin-right: 1rem;
+  color: black;
+}
+.header .box3{
+  position: absolute;
+  top: 3%;
+  right: 7%;
+}
+.header #menu a{
+  width: 100%;
+  padding: 3% 0%;
+  color: white;
+}
+.header #menu a:hover{
+  color: rgb(121, 121, 132);
+  cursor: pointer;
+}
+.header .box4{
+  position: relative;
+}
+.header .box5{
+  position: relative;
+  top: 18rem;
+}
+.header .box6{
+  position: relative;
+  top: 18rem;
+}
+
+/* Phone (L) */
+@media only screen and (min-width: 425px), (max-width: 737px) {
+  .header .row1 .col1 h1{
+    font-size: 60pt;
+  }
+  .header .row1 .col1 p{
+    margin-top: -20%;
+  }
+  .header .row{
+    position: absolute;
+    bottom: 17%;
+  }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 768px) { 
+  .header .box1 h1{
+    font-size: 90pt;
+  }
+  .header .box4{
+    position: absolute;
+    top: 25rem;
+  }
+  .header .box5{
+    position: absolute;
+    top: 28rem;
+  }
+  .header .box6{
+    position: absolute;
+    top: 32rem;
+  }
+}
+
+
+
+/* Small Laptop */
+@media only screen and (min-width: 1024px) {
+  .header .box2 .links{
+    display: flex;
+    position: absolute;
+    right: 8rem;
+    top: 1.5rem;
+  }
+  .header .box2 .links a{
+    margin-right: 1rem;
+    color: black;
+  }
+  .header .box2 .links a:hover{
+    color: black;
+    font-size: 20pt;
+    text-decoration: underline;
+  }
+  .header .box4{
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    width: 30%;
+    text-align: justify;
+  }
+  .header .box4 h2{
+    text-align: right;
+    font-size: 35pt;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 30px 0;
+  }
+  .header .box4 h3{
+    margin-top: 15rem;
+    padding: 1%;
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 30px 0;
+  }
+  .header .box5{
+    position: absolute;
+    top: 34rem;
+  }
+  .header .box6{
+    position: absolute;
+    top: 34rem;
+    right: 4rem;
+    width: 15rem;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .header .box3{
+    right: 5%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .header{
+    position: relative;
+  }
+}

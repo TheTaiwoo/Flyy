@@ -1,0 +1,69 @@
+
+/* Solutions */
+
+.solutions button{
+  font-family: MuseoModerno;
+  padding: .7rem;
+  border-radius: 10px;
+  border: none;
+  animation-name: changingColors;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease;
+}
+
+.solutions{
+  background-color: rgb(225,226,226);
+}
+.solutions .row, .solutions .imgRow{
+  padding: 1% 5%;
+  line-height: 2;
+}
+.solutions img{
+  border-radius: 50px 0 50px;
+}
+
+/* Small Laptop */
+@media only screen and (min-width: 1024px) {
+  .row, .imgRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .imgRow .col1{
+    width: 47%;
+    margin-right: 3rem;
+  }
+  .imgRow .col2{
+    width: 47%;
+  }
+  .imgRow img{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+  }
+ .row .col1{
+  width: 70%;
+ }
+ .row .col2{
+  width: 45%;
+ }
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .solutions{
+    max-width: 1800px;
+    margin: auto;
+    border: .5px solid rgb(236, 234, 234);
+  }
+}
+
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  .solutions{
+    background-color: rgb(24, 23, 23);
+    color: white;
+  }
+}
